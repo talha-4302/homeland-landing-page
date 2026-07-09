@@ -22,8 +22,12 @@
             alt="Home Smart Logo"
           />
         </a>
+
+        <!--Mobile menu-button and  menubar-->
         <button
           id="menu"
+          aria-label="Open Menu"
+          aria-expanded="false"
           class="focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-500 lg:hidden transition-colors"
         >
           <svg
@@ -41,12 +45,37 @@
             />
           </svg>
         </button>
-        <div role="menubar" class="flex flex-col gap-4 absolute right-0 left-0">
-          <a role="menuitem" href="/">Home</a>
-          <a role="menuitem" href="/">Home</a>
-          <a role="menuitem" href="/">Home</a>
-          <a role="menuitem" href="/">Home</a>
+        <div
+          role="menubar"
+          id="menubar"
+          class="hidden flex-col gap-4 absolute right-0 left-0 top-16 bg-amber-400 shadow-xl text-center p-6 text-lg items-center lg:flex lg:flex-row lg:justify-between lg:static lg:w-full lg:shadow-none"
+        >
+          <a
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-500 transition-colors"
+            href="/"
+            >Home</a
+          >
+          <a
+            role="menuitem"
+            class="py-1 px-6 lg:mr-auto dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-500 transition-colors"
+            href="/"
+            >Contact</a
+          >
+          <a
+            role="menuitem"
+            class="py-1 px-6 dark:text-neutral-900 focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-sm ring-offset-4 ring-offset-amber-400 text-neutral-900 hover:text-neutral-500 transition-colors"
+            href="/"
+            >Login</a
+          >
+          <a
+            role="menuitem"
+            class="py-2 px-6 bg-teal-900 text-white shadow-2xl focus:outline-none focus-visible:ring-4 ring-neutral-900 rounded-md ring-offset-4 ring-offset-amber-400 hover:shadow-none transition-shadow"
+            href="/"
+            >Sign up</a
+          >
         </div>
+        <!--End of mobile menu-->
       </div>
     </nav>
 
